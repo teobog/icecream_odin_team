@@ -1,0 +1,46 @@
+.advantages {
+  background-color: $section-background;
+  &__container {
+    background-color: $section-background;
+    padding-bottom: 145px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  &__text {
+    &::before {
+      display: block;
+      content: '';
+      width: 33px;
+      height: 50px;
+      margin-bottom: 16px;
+    }
+  }
+  &__inventory {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}
+
+.icon-milkbucket::before {
+  background-image: url(/images/milk_bucket.png);
+  background-repeat: no-repeat;
+}
+.icon-applebucket {
+  background-image: url(/images/apple_bucket.png);
+  background-repeat: no-repeat;
+  margin-top: 38px;
+}
+.icon-lovemilk {
+  background-image: url(/images/love_milk.png);
+  background-repeat: no-repeat;
+  margin-top: 38px;
+}
