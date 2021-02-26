@@ -51,7 +51,6 @@
     color: #907e82;
   }
   &__icon {
-    margin-right: -30px;
     display: flex;
 
     justify-content: flex-end;
@@ -60,9 +59,10 @@
     color: $accent-color;
     font-size: 13px;
   }
-  &__icon-item {
+  &__icon-item:not(:last-child) {
     margin-right: 28px;
   }
+
   &__page {
     display: flex;
     justify-content: center;
