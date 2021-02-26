@@ -1,17 +1,27 @@
 <header class="header">
     <div class="container">
-        <div class="circle"></div>
         <div class="background">
-            <img class="background__images" src="./images/hero_icecream.png" alt="" />
+            <img class="background__icecreem" src="./images/hero_icecream.png" alt="">
+            <img class="background__wooman" src="./images/tasty_women.png" alt="">
+            <img class="background__milk" src="./images/hero_milk_bottle.png" alt="">
+            <div class="background__circle"></div>
         </div>
-        <div class="header">
+        <div class="header__container">
             <nav class="header__nav">
-                <a href="./index.html">
-                    <img class="header__logo" src="./images/logotype.png" alt="" /></a>
+                <a class="header__logo" href="/index.html">
+                    <img src="./images/logotype.png" alt=""></a>
                 <div class="burger">
                     <button class="header__burger">
                         <svg class="header__burger_icon" height="12px" width="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-Burger"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header__buy">
+                    <button class="header__buy__btn btn--red">
+                        Buy now
+                        <svg class="header__buy__btn__icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-right-check"></use>
                         </svg>
                     </button>
                 </div>
@@ -22,10 +32,35 @@
                     <p>made with</p>
                     <p class="hero__title__redtext">passion</p>
                 </h1>
-                <button href="" type="button" class="hero__btn btn--red">Products</button>
+                <button href="" type="button" class="hero__btn btn--red">
+                    Products
+                </button>
                 <button href="" type="button" class="hero__btn btn--white">
                     How it’s made?
                 </button>
+                <div class="hero__info">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et
+                    </p>
+                    <a href="" class="hero__info__link">
+                        <svg class="hero__info__icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-right-check"></use>
+                        </svg>
+                    </a>
+                    <ul class="hero__counter">
+                        <li class="hero__counter__items">
+                            <p class="hero__counter__red">16</p>
+                            <p class="hero__counter__primery">cafes</p>
+                            <div class="hero__counter__circle"></div>
+                        </li>
+                        <li class="hero__counter__items">
+                            <p class="hero__counter__red">32</p>
+                            <p class="hero__counter__primery">food trucks</p>
+                            <div class="hero__counter__circle"></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
