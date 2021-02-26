@@ -1,9 +1,8 @@
 <section class="contacts">
     <div class="container contact">
-        <h2 class="">Скрытый заголовок Contacts</h2>
-        <ul class="">
+        <h2 class="contact__hidden">Скрытый заголовок Contacts</h2>
+        <ul class="contact__grid">
             <li class="contact__iten">
-                <div class="contact__post">
                     <p class="contact__text">CAFE</p>
                     <h2 class="contact__title">Chicago</h2>
                     <p class="contact__subtitle">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -25,10 +24,8 @@
                             <a class="contact__adress__iten" href="mailto:noreply@envato.com">noreply@envato.com</a>
                         </li>
                     </ul>
-                </div>
             </li>
             <li class="contact__iten">
-                <div class="contact__post">
                     <p class="contact__text__green">FOODTRUCK</p>
                     <h2 class="contact__title">Los Angeles</h2>
                     <p class="contact__subtitle">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -50,10 +47,8 @@
                             <a class="contact__adress__iten" href="mailto:noreply@envato.com">noreply@envato.com</a>
                         </li>
                     </ul>
-                </div>
             </li>
             <li class="contact__iten">
-                <div class="contact__post">
                     <p class="contact__text">CAFE</p>
                     <h2 class="contact__title">New York</h2>
                     <p class="contact__subtitle">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -75,15 +70,19 @@
                             <a class="contact__adress__iten" href="mailto:noreply@envato.com">noreply@envato.com</a>
                         </li>
                     </ul>
-
-                </div>
-            </li>
-            <li>
-                <button>Our Locations</button>
-            </li>
-            <li>
-                <button>Franchise</button>
-            </li>
+            </li>            
         </ul>
+        <div class="contact__click">
+        <button class="contact__btn--red">Our Locations
+            <svg class="icon-right-check" width="12" height="10">
+                <use href="./images/svg/symbol-defs.svg#icon-right-check"></use>
+            </svg>
+        </button>
+        <button class="contact__btn--white">Franchise
+            <svg class="icon-right-check--white" width="12" height="10">
+                <use href="./images/svg/symbol-defs.svg#icon-right-check"></use>
+            </svg>
+        </button>
+        </div>
     </div>
 </section>
