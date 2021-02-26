@@ -1,70 +1,165 @@
-.contact {
+.contacts {
   background-color: $section-background;
+}
+.contact {
+  width: 80%;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
-  /* or 22px */
-  letter-spacing: 0.04em;
-  &__post {
-    width: 179px;
-    // text-align: start;
+
+  &__grid {
+    margin-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    @media screen and (min-width: 480px) {
+      max-width: 40px;
+    }
   }
+  &__hidden {
+    display: none;
+  }
+  // &__post {
+  //   width: 179px;
+  //   // text-align: start;
+  // }
   &__text {
     color: #ffffff;
     width: 80px;
+    text-align: center;
     background: #f0d1a5;
     border-radius: 4px;
     margin-bottom: 25px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    /* or 22px */
+    letter-spacing: 0.04em;
   }
   &__text__green {
     color: #ffffff;
     width: 130px;
+    text-align: center;
     background: #c2e297;
     border-radius: 4px;
     margin-bottom: 25px;
-  }
-&__iten {
-  display: flex;
-  justify-content: center;
-  text-align: start;
-  padding-top: 43px;
-  width: 220px;
-  background-color: #ffffff;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-}
-&__title {
-  color: #000000;
-  margin-bottom: 10px;
-}
-&__subtitle {
-  width: 179px;
-  border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 25px;
-  color: #907e82;
-}
-&__info__iten {
-  padding-top: 25px;
-}
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    /* or 22px */
 
-&__info {
-  width: 179px;
-  border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 25px;
+    letter-spacing: 0.04em;
+  }
+  &__iten {
+    width: 220px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 43px;
+    min-width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 30px rgb(212 20 67 / 10%);
+    border-radius: 24px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    /* or 22px */
+
+    letter-spacing: 0.04em;
+  }
+  &__subtitle {
+    width: 183px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+    color: #907e82;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    /* or 22px */
+
+    letter-spacing: 0.04em;
+  }
+  &__info__iten {
+    padding-top: 25px;
+  }
+
+  &__info {
+    width: 179px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+  }
+  &__info__iten__today {
+    color: #000000;
+  }
+  &__info__iten__time {
+    color: #ffa5ba;
+  }
+  &__adress {
+    padding-top: 25px;
+    padding-bottom: 43px;
+  }
+  &__adress__iten {
+    color: #907e82;
+  }
+  &__click {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__btn--red {
+    fill: #ffffff;
+    width: 161px;
+    height: 44px;
+    background: $accent-color;
+    color: white;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    border-radius: 22px;
+    border: 1px solid;
+    margin-bottom: 10px;
+  }
+  &__btn--white {
+    color: #d41443;
+    background-color: #ffffff;
+    fill: $accent-color;
+    width: 161px;
+    height: 44px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    border-radius: 22px;
+    border: 1px solid #ffffff;
+  }
 }
-&__info__iten__today {
-  color: #000000;
+.icon-right-check {
+  margin-left: 8px;
 }
-&__info__iten__time {
-  color: #ffa5ba;
-}
-&__adress {
-  padding-top: 25px;
-  padding-bottom: 43px;
-}
-&__adress__iten {
-  color: #907e82;
-}
+.icon-right-check--white {
+  margin-left: 13px;
 }
