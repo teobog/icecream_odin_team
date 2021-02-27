@@ -4,7 +4,7 @@
   min-width: 280px;
   margin: 0 auto;
   padding-top: 80px;
-  padding-bottom: 86px;
+  padding-bottom: 170px;
 
   font-family: DM Sans, sans-serif;
   font-weight: 500;
@@ -27,8 +27,8 @@
 
     background: repeating-linear-gradient(
       180deg,
-      transparent 0px,
-      transparent 29px,
+      transparent,
+      transparent 28px,
       #e1e1e1 30px
     );
     &::before {
@@ -56,7 +56,7 @@
     &--text {
       position: relative;
       margin: 0 auto;
-      width: 87%;
+      width: 88%;
     }
 
     &--location {
@@ -105,6 +105,101 @@
   }
 }
 
-.test {
-  background-color: black;
+@media screen and (min-width: 479px) {
+  .reviews {
+    width: 437px;
+    height: 479px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    width: 100%;
+    height: auto;
+    padding-top: 121px;
+    padding-bottom: 197px;
+
+    font-size: 14px;
+    line-height: 2.16;
+
+    &__photo {
+      margin-bottom: 19px;
+    }
+
+    &--lines {
+      width: 84.5%;
+
+      background: repeating-linear-gradient(
+        transparent,
+        transparent 27px,
+        #e1e1e1 29px
+      );
+      &::before {
+        top: -19%;
+        left: -3%;
+      }
+    }
+
+    &__box {
+      width: 80.7%;
+      padding-top: 47px;
+      padding-bottom: 28px;
+
+      &--text {
+        width: 88%;
+      }
+
+      &--location {
+        margin-top: 14px;
+        font-size: 16px;
+        line-height: 1.82;
+      }
+
+      &--circle {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 123px;
+    padding-bottom: 234px;
+
+    font-size: 16px;
+    line-height: 1.86;
+
+    &__photo {
+      margin-bottom: 15px;
+    }
+
+    &--lines {
+      width: 813px;
+      &::before {
+        top: -24%;
+        left: 0.6%;
+      }
+    }
+
+    &__box {
+      width: 926px;
+      padding-top: 47px;
+      padding-bottom: 28px;
+
+      &--text {
+        width: 750px;
+      }
+
+      &--location {
+        margin-top: 15px;
+        font-size: 20px;
+        line-height: 1.86;
+      }
+
+      &--circle {
+        margin-top: 15px;
+      }
+    }
+  }
 }
