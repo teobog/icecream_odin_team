@@ -2,22 +2,47 @@
   background-color: $section-background;
 }
 .contact {
-  width: 80%;
-  font-family: DM Sans;
+  width: 87.5%;
+  font-family: DM Sans, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
 
   &__grid {
-    margin-bottom: 54px;
+    position: relative;
+    top: -84px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     @media screen and (min-width: 480px) {
-      max-width: 40px;
+      max-width: 479px;
+    }
+    @media screen and(min-width: 480px) and (min-width: 768px) {
+      width: 40%;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1280px) {
+      // width: 1050px;
     }
   }
+  &_list {
+    width: 179px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 480px) {
+      width: 179px;
+    }
+    @media screen and(min-width: 480px) and (min-width: 768px) {
+      width: 157px;
+    }
+    @media screen and (min-width: 1280px) {
+      // width: 1050px;
+    }
+  }
+
   &__hidden {
     display: none;
   }
@@ -28,12 +53,11 @@
     background: #f0d1a5;
     border-radius: 4px;
     margin-bottom: 25px;
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
-    /* or 22px */
+    line-height: 1.8;
     letter-spacing: 0.04em;
   }
   &__text__green {
@@ -50,30 +74,31 @@
     line-height: 1.86;
     letter-spacing: 0.04em;
   }
-  &__iten {
-    width: 220px;
-    flex-direction: column;
+  &__item {
     display: flex;
     justify-content: center;
-    text-align: start;
-    padding-left: 20px;
     padding-top: 43px;
-    min-width: 80%;
+    min-width: 83%;
     background-color: #ffffff;
-    box-shadow: 0px 8px 30px rgb(212, 20, 67);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+      min-width: 220px;
+      margin-right: 20px;
+    }
+  }
+  &__item:not(:last-child) {
     margin-bottom: 20px;
   }
   &__title {
     color: #000000;
     margin-bottom: 10px;
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
-    /* or 22px */
-
+    line-height: 1.8;
     letter-spacing: 0.04em;
   }
   &__subtitle {
@@ -81,16 +106,20 @@
     border-bottom: 1px solid #e1e1e1;
     padding-bottom: 25px;
     color: #907e82;
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
-    /* or 22px */
-
+    line-height: 1.8;
     letter-spacing: 0.04em;
+    @media screen and(min-width: 480px) and (min-width: 768px) {
+      width: 157px;
+    }
+    @media screen and (min-width: 1280px) {
+      // width: 1050px;
+    }
   }
-  &__info__iten {
+  &__info--item {
     padding-top: 25px;
   }
 
@@ -99,23 +128,32 @@
     border-bottom: 1px solid #e1e1e1;
     padding-bottom: 25px;
   }
-  &__info__iten__today {
+  &__info--item--today {
     color: #000000;
+    margin-bottom: 4px;
   }
-  &__info__iten__time {
+  &__info--item--time {
     color: #ffa5ba;
   }
   &__adress {
     padding-top: 25px;
     padding-bottom: 43px;
   }
-  &__adress__iten {
+  &__adress--item {
     color: #907e82;
+    margin-bottom: 4px;
   }
   &__click {
+    position: relative;
+    top: -31px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      top: -3px;
+    }
   }
   &__btn--red {
     fill: #ffffff;
@@ -123,7 +161,7 @@
     height: 44px;
     background: $accent-color;
     color: white;
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -133,6 +171,10 @@
     border-radius: 22px;
     border: 1px solid;
     margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+      margin-right: 15px;
+    }
   }
   &__btn--white {
     color: #d41443;
@@ -140,7 +182,7 @@
     fill: $accent-color;
     width: 161px;
     height: 44px;
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
