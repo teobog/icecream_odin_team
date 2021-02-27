@@ -233,8 +233,9 @@ header {
       &__counter {
         position: absolute;
         right: 0;
-        top: -10px;
+        top: -12px;
         &__items {
+          margin-top: 12px;
           position: relative;
           font-style: normal;
           font-weight: normal;
@@ -376,7 +377,10 @@ header {
     }
   }
   &__counter {
+    top: -38.5px;
+    right: -18px;
     &__items {
+      margin-top: 15px;
       padding: 4px 18px 0 0;
     }
     &__red {
