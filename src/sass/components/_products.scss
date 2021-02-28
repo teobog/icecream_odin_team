@@ -2,7 +2,29 @@
   background: #ffffff;
   padding-top: 121px;
   padding-bottom: 98px;
+  @media screen and (min-width: 480px) {
+  }
 
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+  &__title {
+    margin-bottom: 144px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 150px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 127px;
+      padding-bottom: 119px;
+    }
+  }
   &__text {
     font-family: Titan One;
     font-weight: normal;
@@ -11,18 +33,43 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffa5ba;
+    margin-bottom: 15px;
   }
+  .list {
+    // @media screen and (min-width: 480px) {
+    // }
 
-  // &__title {
-  //   margin-bottom: 144px;
-  // }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
 
+    @media screen and (min-width: 1200px) {
+    }
+  }
   .card {
     border-radius: 24px;
     margin-bottom: 130px;
-    padding-bottom: 41px;
-    padding-top: 161px;
+    padding-bottom: 39px;
     position: relative;
+    padding-top: 161px;
+
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 220px;
+      margin-bottom: 0;
+      padding-top: 152px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 329px;
+
+      margin-bottom: 0;
+      padding-top: 163px;
+    }
     &:last-child {
       margin-bottom: 0px;
     }
@@ -70,7 +117,7 @@
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
-      line-height: 152%;
+      line-height: 1.5;
       text-align: center;
       letter-spacing: 0.04em;
       color: #ffffff;
@@ -78,6 +125,18 @@
       padding-left: 40px;
       padding-right: 40px;
       margin-bottom: 30px;
+      @media screen and (min-width: 768px) {
+        padding-left: 11px;
+        padding-right: 11px;
+        line-height: 1.76;
+        margin-bottom: 40px;
+      }
+      @media screen and (min-width: 1280px) {
+        padding-left: 44px;
+        padding-right: 44px;
+        line-height: 1.76;
+        margin-bottom: 62px;
+      }
     }
 
     &__cream {
@@ -88,10 +147,23 @@
         width: 249px;
         height: 252px;
         background-image: url(../images/icecream.png);
-        top: -109px;
+        top: -113px;
         left: calc(50% - 125px);
         background-size: cover;
         margin-bottom: 22px;
+        @media screen and (min-width: 768px) {
+          top: -100px;
+          width: 220px;
+          height: 224px;
+          left: calc(50% - 110px);
+        }
+
+        @media screen and (min-width: 1280px) {
+          top: -200px;
+          width: 335px;
+          height: 335px;
+          left: calc(50% - 164px);
+        }
       }
     }
     &__coffee {
@@ -100,12 +172,25 @@
         position: absolute;
         content: '';
         background-image: url(../images/ice_cofee.png);
-        width: 249px;
-        height: 252px;
-        top: -109px;
+        width: 220px;
+        height: 224px;
+        top: -113px;
         left: calc(50% - 125px);
         background-size: cover;
         margin-bottom: 22px;
+        @media screen and (min-width: 768px) {
+          top: -100px;
+          width: 220px;
+          height: 224px;
+          left: calc(50% - 110px);
+        }
+
+        @media screen and (min-width: 1280px) {
+          top: -200px;
+          width: 335px;
+          height: 335px;
+          left: calc(50% - 164px);
+        }
       }
     }
     &__milkshakes {
@@ -114,12 +199,25 @@
         position: absolute;
         content: '';
         background-image: url(../images/milkshakes.png);
-        width: 249px;
-        height: 252px;
-        top: -109px;
+        width: 220px;
+        height: 224px;
+        top: -113px;
         left: calc(50% - 125px);
         background-size: cover;
         margin-bottom: 22px;
+        @media screen and (min-width: 768px) {
+          top: -100px;
+          width: 220px;
+          height: 224px;
+          left: calc(50% - 110px);
+        }
+
+        @media screen and (min-width: 1280px) {
+          top: -200px;
+          width: 335px;
+          height: 335px;
+          left: calc(50% - 164px);
+        }
       }
     }
     .btn {
@@ -131,6 +229,10 @@
       margin: 0 auto;
       display: inherit;
       &__icon {
+        width: 14px;
+        height: 11px;
+        margin-left: 0px;
+        margin-left: 0px;
         fill: #d41443;
       }
     }
