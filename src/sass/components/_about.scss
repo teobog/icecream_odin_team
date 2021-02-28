@@ -1,7 +1,7 @@
 .about {
   width: 100%;
   position: relative;
-  background: #FFF5F6;
+  background: #fff5f6;
   &__container {
     background-color: $section-background;
     padding-top: 125px;
@@ -16,6 +16,22 @@
   &__title {
     text-align: center;
   }
+  @media screen and (min-width: 768px) {
+    &__container {
+      padding-top: 130px;
+      padding-bottom: 50px;
+      width: 100%;
+    }
+    &__text.label-title {
+      font-size: 26px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    &__title.primary-title {
+      font-size: 48px;
+      line-height: 1.15;
+    }
+  }
 }
 
 .cow {
@@ -24,6 +40,12 @@
   flex-direction: column;
   justify-content: center;
   align-content: flex-start;
+  position: relative;
+  &__img {
+    width: 280px;
+    height: 279px;
+    margin-bottom: 46px;
+  }
   &__pre {
     display: flex;
     align-items: center;
@@ -31,24 +53,74 @@
     margin-bottom: 45px;
   }
   &__title {
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
     color: black;
     text-align: left;
-    margin: 0;
-    margin-bottom: 20px;
+    height: 100%;
+    width: 220px;
+    padding-bottom: 30px;
   }
   &__text {
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
     color: $description-color;
     text-align: left;
-    height: 185px;
+    height: 100%;
+    width: 12px;
+    padding-bottom: 20px;
     margin: 0;
+    height: 100%;
+    width: 220px;
+    padding-bottom: 10px;
+    &__secondary {
+      font-family: DM Sans, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.62;
+      color: $description-color;
+      text-align: left;
+      height: 100%;
+      width: 220px;
+      padding-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    &__img {
+      width: 340px;
+      height: 339px;
+      margin-bottom: 0;
+    }
+    &__pre {
+      margin-left: 17px;
+      margin-bottom: 66px;
+      margin-top: 50px;
+    }
+    &__title {
+      width: 340px;
+      height: 100%;
+      font-size: 14px;
+      line-height: 1.76;
+    }
+    &__text {
+      width: 340px;
+      height: 100%;
+      font-size: 14px;
+      line-height: 1.76;
+      padding-bottom: 20px;
+      &__secondary {
+        font-size: 14px;
+        line-height: 1.76;
+        width: 340px;
+        height: 100%;
+        padding-bottom: 62px;
+      }
+    }
   }
 }
 
@@ -60,6 +132,7 @@
   width: 176px;
   height: 44px;
   color: $accent-color;
+  font-family: DM Sans, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -67,15 +140,20 @@
   text-align: center;
   border: none;
   cursor: pointer;
-  margin-top: 26px;
   &:hover {
     outline: none;
   }
   &__icon {
-    width: 4px;
-    height: 8px;
+    width: 8px;
+    height: 100%;
     margin-left: 14px;
     margin-top: 2px;
+    fill: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+    height: 44px;
   }
 }
 
@@ -88,4 +166,7 @@
   position: absolute;
   bottom: 110px;
   z-index: 1;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

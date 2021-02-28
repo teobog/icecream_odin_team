@@ -9,7 +9,9 @@
     align-items: center;
     flex-direction: column;
   }
-  &__title {
+  &__title.primary-title {
+    font-size: 48px;
+    line-height: 1.15;
     text-align: left;
     margin-bottom: 15px;
   }
@@ -25,8 +27,35 @@
   &__inventory {
     font-family: DM Sans;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  @media screen and (min-width: 768px) {
+    &__container {
+      padding-bottom: 246px;
+    }
+    &__list {
+      flex-direction: row;
+    }
+    &__title {
+      margin-bottom: 13px;
+    }
+    &__text {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+      &::before {
+        margin-bottom: 36px;
+      }
+    }
+    &__inventory {
+      font-family: DM Sans, sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.7;
+      height: 71px;
+      width: 180px;
+    }
   }
 }
 
@@ -38,9 +67,15 @@
   background-image: url(../images/apple_bucket.png);
   background-repeat: no-repeat;
   margin-top: 38px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 .icon-lovemilk {
   background-image: url(../images/love_milk.png);
   background-repeat: no-repeat;
   margin-top: 38px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
