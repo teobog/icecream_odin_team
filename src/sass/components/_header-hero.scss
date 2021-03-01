@@ -315,8 +315,15 @@ header {
       display: flex;
       align-items: center;
       color: #FFFFFF;
+      
       &:visited{
-        color: white;}
+        color: white;
+      }
+      &:hover,
+      &:focus{
+        color: #D41443;
+        outline: none;
+      }
         &.current{
           color: #D41443;
         }
