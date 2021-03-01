@@ -1,8 +1,8 @@
 .advantages {
   background-color: $section-background;
+  padding-bottom: 145px;
   &__container {
     background-color: $section-background;
-    padding-bottom: 145px;
   }
   &__list {
     display: flex;
@@ -10,8 +10,6 @@
     flex-direction: column;
   }
   &__title.primary-title {
-    font-size: 48px;
-    line-height: 1.15;
     text-align: left;
     margin-bottom: 15px;
   }
@@ -19,25 +17,52 @@
     &::before {
       display: block;
       content: '';
-      width: 33px;
+      width: 50px;
       height: 50px;
       margin-bottom: 16px;
     }
   }
   &__inventory {
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.67;
   }
   @media screen and (min-width: 768px) {
-    &__container {
-      padding-bottom: 246px;
-    }
+    padding-bottom: 246px;
     &__list {
       flex-direction: row;
     }
     &__title {
+      font-size: 48px;
+      line-height: 1.14;
+      margin-bottom: 13px;
+    }
+    &__text {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+      &::before {
+        margin-bottom: 36px;
+      }
+    }
+    &__inventory {
+      font-family: DM Sans, sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.7;
+      height: 71px;
+      width: 180px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 310px;
+    &__list {
+      flex-direction: row;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 1.14;
       margin-bottom: 13px;
     }
     &__text {
