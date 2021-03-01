@@ -1,24 +1,27 @@
 .about {
   width: 100%;
   position: relative;
-  background: #fff5f6;
+  background: $section-background;
+  padding-top: 125px;
+  padding-bottom: 39px;
   &__container {
     background-color: $section-background;
-    padding-top: 125px;
-    padding-bottom: 26px;
     width: 100%;
   }
-
   &__text {
     margin-bottom: 15px;
-    text-align: center;
   }
   &__title {
-    text-align: center;
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
     &__container {
-      padding-top: 130px;
       padding-bottom: 50px;
       width: 100%;
     }
@@ -27,9 +30,37 @@
       line-height: 1.15;
       margin-bottom: 16px;
     }
-    &__title.primary-title {
-      font-size: 48px;
-      line-height: 1.15;
+    &__title {
+      width: 100%;
+      height: 55px;
+      margin: 0;
+      &.primary-title {
+        font-size: 48px;
+        line-height: 1.15;
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 146px;
+    &__container {
+      padding-bottom: 55px;
+      // width: 100%;
+    }
+    &__text.label-title {
+      margin-bottom: 15px;
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+    }
+    &__title {
+      width: 100%;
+      height: 66px;
+      margin: 0;
+      &.primary-title {
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+      }
     }
   }
 }
@@ -39,7 +70,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: flex-start;
+  align-items: center;
   position: relative;
   &__img {
     width: 280px;
@@ -48,9 +79,8 @@
   }
   &__pre {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin-bottom: 45px;
+    margin-left: 30px;
   }
   &__title {
     font-family: DM Sans, sans-serif;
@@ -61,7 +91,7 @@
     text-align: left;
     height: 100%;
     width: 220px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
   }
   &__text {
     font-family: DM Sans, sans-serif;
@@ -76,7 +106,7 @@
     margin: 0;
     height: 100%;
     width: 220px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     &__secondary {
       font-family: DM Sans, sans-serif;
       font-weight: 500;
@@ -86,11 +116,12 @@
       text-align: left;
       height: 100%;
       width: 220px;
-      padding-bottom: 20px;
+      padding-bottom: 25px;
     }
   }
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    align-items: stretch;
     &__img {
       width: 340px;
       height: 339px;
@@ -98,7 +129,6 @@
     }
     &__pre {
       margin-left: 17px;
-      margin-bottom: 66px;
       margin-top: 50px;
     }
     &__title {
@@ -106,19 +136,50 @@
       height: 100%;
       font-size: 14px;
       line-height: 1.76;
+      padding-bottom: 22px;
     }
     &__text {
       width: 340px;
       height: 100%;
       font-size: 14px;
       line-height: 1.76;
-      padding-bottom: 20px;
+      padding-bottom: 18px;
       &__secondary {
         font-size: 14px;
         line-height: 1.76;
         width: 340px;
         height: 100%;
         padding-bottom: 62px;
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &__img {
+      width: 516px;
+      height: 516px;
+    }
+    &__pre {
+      margin-left: 74px;
+      margin-top: 51px;
+    }
+    &__title {
+      width: 463px;
+      font-size: 16px;
+      line-height: 1.75;
+      padding-bottom: 35px;
+    }
+    &__text {
+      width: 463px;
+      font-size: 14px;
+      line-height: 1.93;
+      padding-bottom: 40px;
+
+      &__secondary {
+        font-size: 14px;
+        line-height: 1.93;
+        width: 463px;
+        height: 100%;
+        padding-bottom: 45px;
       }
     }
   }
@@ -140,6 +201,7 @@
   text-align: center;
   border: none;
   cursor: pointer;
+  // margin-left: 50px;
   &:hover {
     outline: none;
   }
@@ -153,7 +215,7 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.31;
-    height: 44px;
+    // height: 44px;
   }
 }
 
