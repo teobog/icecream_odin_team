@@ -21,14 +21,14 @@
     background: repeating-linear-gradient(
       180deg,
       transparent,
-      transparent 28px,
-      #e1e1e1 30px
+      transparent 29px,
+      #e1e1e1 31px
     );
     &::before {
       content: '';
       position: absolute;
-      top: -5%;
-      left: 1%;
+      top: -6%;
+      left: 6%;
       display: block;
       width: 54px;
       height: 40px;
@@ -54,7 +54,7 @@
       font-family: DM Sans, sans-serif;
       font-weight: 500;
       font-size: 12px;
-      line-height: 2.58;
+      line-height: 2.6;
       text-align: center;
       color: #000000;
     }
@@ -131,19 +131,20 @@
         #e1e1e1 29px
       );
       &::before {
-        top: -19%;
-        left: -3%;
+        top: -21%;
+        left: -1.5%;
       }
     }
 
     &__box {
-      width: 80.7%;
+      width: 88.57%;
       padding-top: 47px;
       padding-bottom: 28px;
 
       &--text {
         font-size: 14px;
         line-height: 2.16;
+        letter-spacing: 0.04em;
         width: 88%;
       }
 
@@ -170,22 +171,22 @@
     }
 
     &--lines {
-      width: 813px;
+      width: 87.79%;
       &::before {
-        top: -24%;
-        left: 0.6%;
+        top: -26%;
+        left: -0.6%;
       }
     }
 
     &__box {
-      width: 926px;
+      width: 88.19%;
       padding-top: 47px;
       padding-bottom: 28px;
 
       &--text {
         font-size: 16px;
         line-height: 1.86;
-        width: 750px;
+        width: 92.25%;
       }
 
       &--location {
