@@ -1,15 +1,21 @@
 .advantages {
   background-color: $section-background;
   padding-bottom: 145px;
+  z-index: 2;
+  &__title {
+    display: none;
+  }
   &__container {
     background-color: $section-background;
   }
   &__list {
     display: flex;
-    align-items: center;
+    // align-items: center;
     flex-direction: column;
+    // justify-content: center;
   }
   &__title.primary-title {
+    font-size: 36px;
     text-align: left;
     margin-bottom: 15px;
   }
@@ -27,16 +33,18 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.67;
+    width: 230px;
   }
   @media screen and (min-width: 768px) {
     padding-bottom: 246px;
     &__list {
       flex-direction: row;
     }
-    &__title {
+    &__title.primary-title {
       font-size: 48px;
       line-height: 1.14;
       margin-bottom: 13px;
+      text-transform: none;
     }
     &__text {
       &:not(:last-child) {
@@ -49,8 +57,8 @@
     &__inventory {
       font-family: DM Sans, sans-serif;
       font-weight: 700;
-      font-size: 12px;
-      line-height: 1.7;
+      font-size: 14px;
+      line-height: 1.71;
       height: 71px;
       width: 180px;
     }
@@ -60,7 +68,7 @@
     &__list {
       flex-direction: row;
     }
-    &__title {
+    &__title.primary-title {
       font-size: 58px;
       margin-bottom: 15px;
     }
@@ -79,7 +87,7 @@
       line-height: 1.75;
       letter-spacing: 0.02em;
       height: 52px;
-      width: 330px;
+      width: 100%;
     }
   }
 }
