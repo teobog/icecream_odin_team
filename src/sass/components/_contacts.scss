@@ -271,7 +271,7 @@
       // top: -3px;
     }
   }
-  &__btn--red {
+  &__red {
     fill: #ffffff;
     height: 44px;
     padding-left: 13px;
@@ -299,9 +299,7 @@
       padding-left: 30px;
     }
   }
-  &__btn--white {
-    color: #d41443;
-    background-color: #ffffff;
+  &__white {
     fill: $accent-color;
     padding-left: 27px;
     padding-right: 28px;
