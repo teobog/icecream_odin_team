@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/burger-nav");
 },{"./sass/main.scss":"clu1","./js/burger-nav":"jWX4"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream_odin_team/src.0f1547d1.js.map
+//# sourceMappingURL=/src.ec7acc3c.js.map
