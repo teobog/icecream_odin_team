@@ -304,6 +304,7 @@ header {
   }
   &__burger{
     display: none;
+
   }
   &__navigation {
     z-index: 2;
@@ -331,11 +332,7 @@ header {
       &:visited{
         color: white;
       }
-      &:hover,
-      &:focus{
-        color: #D41443;
-        outline: none;
-      }
+
     }
   }
   &__buy {
