@@ -195,9 +195,6 @@
   text-align: center;
   border: none;
   cursor: pointer;
-  &:hover {
-    outline: none;
-  }
   &__icon {
     width: 8px;
     height: 100%;
@@ -217,6 +214,7 @@
   background-image: url(/images/milk_background.png);
   background-repeat: no-repeat;
   background-size: 100% 133px;
+
   position: absolute;
   bottom: 110px;
   z-index: 1;
