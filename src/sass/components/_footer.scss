@@ -126,16 +126,9 @@
     height: 32px;
     border-radius: 50%;
     background-color: $secondary-title-color;
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-      outline: none;
-    }
     @media screen and (min-width: 768px) {
       width: 34px;
       height: 34px;
-    }
-    @media screen and(min-width:1200) {
     }
   }
 }
