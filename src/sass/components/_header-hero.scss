@@ -16,19 +16,20 @@ header {
       margin-bottom: 137px;
     }
     &__logo {
-      width: 200px;
+      width: 199px;
       height: 50px;
     }
     &__burger {
       position: relative;
       z-index: 1;
       padding: 0px;
+      padding-top: 2px;
       background: transparent;
       border: none;
       margin-left: 0;
       &__icon {
         width: 20px;
-        height: 12px;
+        height: 14px;
         border: none;
         color: #D41443;
       }
@@ -89,10 +90,11 @@ header {
       text-align: start;
       color: #FFFFFF;
       font-size: 26px;
-      line-height: 1.145;
-    }
+      line-height: 1.16;
+        }
     &__title__redtext {
-      line-height: 0.965;
+      letter-spacing: 0.00em;
+      line-height: 0.9;
       font-size: 48px;
       color: #D41443;
     }
@@ -105,17 +107,17 @@ header {
       line-height: 1.25;
       z-index: 2;
       position: relative;
-      margin-top: 21px;
+      margin-top: 22px;
       border-radius: 20px;
       border: none;
       align-items: center;
       text-align: center;
     &:not(:last-child) {
-      margin-right: 5px;
+      margin-right: 4px;
     }
     }
     &__btn.btn--red{
-      width:  61px;
+      width:  62px;
       height: 24px;
     }
     &__btn.btn--white{
@@ -157,7 +159,8 @@ header {
         display: block;
         margin-left: 30px;
         &__btn {
-          width: 159px;
+          margin-bottom: 4px;
+          width: 160px;
           height: 44px;
           font-family: DM Sans;
           font-style: normal;
@@ -170,9 +173,9 @@ header {
           border-radius: 22px;
         }
         &__btn__icon {
-          margin-left: 12px;
-          width: 10px;
-          height: 10px;
+          margin-left: 2px;
+          width: 11px;
+          height: 11px;
           fill: #D41443;
         }
       }
@@ -191,22 +194,24 @@ header {
       }
       &__circle {
         top: -6px;
-        left: 270px;
+        left: 273px;
         width: 324px;
         height: 322px;
       }
     }
     .hero {
       &__btn{
-        margin-top: 18px;
+        margin-top: 23px;
       }
-      padding-bottom: 36px;
+      padding-bottom: 34px;
       position: relative;
       &__title {
         width: 162px;
         font-size: 22px;
         &__redtext {
+          letter-spacing: 0.04em;
           font-size: 34px;
+          line-height: 0.8;
         }
       }
 
@@ -222,7 +227,7 @@ header {
         font-size: 8px;
         line-height: 1.5;
         color: #FFFFFF;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
       }
         &__link {
           display: flex;
@@ -250,6 +255,11 @@ header {
           font-style: normal;
           font-weight: normal;
           padding: 1px 8px 0 0;
+          &:last-child{
+            padding: 2px 7px 0 0;}
+            &:first-child{
+              padding: 1px 9px 0 0;
+            }
         }
         &__red {
           position: relative;
@@ -307,6 +317,7 @@ header {
       }
     }
     &__link {
+      height: 49px;
       font-family: DM Sans;
       font-style: normal;
       font-weight: 700;
@@ -315,6 +326,7 @@ header {
       display: flex;
       align-items: center;
       color: #FFFFFF;
+      padding-bottom: 3px;
       
       &:visited{
         color: white;
@@ -324,13 +336,13 @@ header {
         color: #D41443;
         outline: none;
       }
-        &.current{
-          color: #D41443;
-        }
     }
   }
   &__buy {
-    margin-left: 110px;
+    margin-left: 113px;
+    &__btn{
+      width: 158px;
+    }
   }
   .background{
     &__icecreem {
@@ -358,19 +370,22 @@ header {
 }
 }
 .hero {
-  padding-bottom: 54px;
+  padding-bottom: 56px;
   &__title {
     width: 277px;
     font-size: 38px;
     &__redtext {
       font-size: 58px;
-      line-height: 0.905;
+      line-height: 0.76;
     }
   }
   &__btn {
     font-size: 14px;
     line-height: 1.28;
-    margin: 25px 10px 0 0;
+    margin-top: 30px;
+    &:not(:last-child) {
+      margin-right: 11px;
+  }
   }
   &__btn.btn--red{
     width:  104px;
@@ -385,8 +400,8 @@ header {
     margin: 112px 0 0 180px;
     &__text{
       font-size: 14px;
-      line-height: 1.4;
-      margin-bottom: 23px;
+      line-height: 1.45;
+      margin-bottom: 18px;
     } 
     &__link{
       width: 26px;
@@ -402,11 +417,12 @@ header {
     }
   }
   &__counter {
-    top: -32.5px;
-    right: -18px;
+    top: -30.5px;
+    right: -11px;
     &__items {
       margin-top: 19px;
-      padding: 4px 18px 0 0;
+      &:last-child{
+      padding: 2px 9px 0 0;}
     }
     &__red {
       font-size: 46px;
@@ -415,7 +431,9 @@ header {
       font-size: 14px;
     }
     &__circle {
-      width: 30px;
+      top: -3px;
+      right: -6px;
+      width: 28px;
       height: 30px;
     }
   }
