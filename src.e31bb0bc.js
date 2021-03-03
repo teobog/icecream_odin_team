@@ -199,8 +199,26 @@ module.hot.accept(reloadCSS);
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
+  function toggleModal(e) {
+    refs.modal.style.transition = 'opacity 1s';
     refs.modal.classList.toggle('is-open');
+  }
+})();
+},{}],"js/buy-menu.js":[function(require,module,exports) {
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-modal-open-buy-menu]'),
+    closeModalBtn: document.querySelector('[data-modal-close-buy-menu]'),
+    modal: document.querySelector('[data-modal-buy-menu]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal(e) {
+    if (e.target === e.currentTarget) {
+      refs.modal.style.transition = 'opacity 1s';
+      refs.modal.classList.toggle('is-open');
+    }
   }
 })();
 },{}],"js/products.js":[function(require,module,exports) {
@@ -213,8 +231,11 @@ module.hot.accept(reloadCSS);
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('hidden');
+  function toggleModal(e) {
+    if (e.target === e.currentTarget) {
+      refs.modal.style.transition = '1s';
+      refs.modal.classList.toggle('hidden');
+    }
   }
 })();
 },{}],"js/products-coffee.js":[function(require,module,exports) {
@@ -227,8 +248,11 @@ module.hot.accept(reloadCSS);
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('hidden');
+  function toggleModal(e) {
+    if (e.target === e.currentTarget) {
+      refs.modal.style.transition = '1s';
+      refs.modal.classList.toggle('hidden');
+    }
   }
 })();
 },{}],"js/products-milkshake.js":[function(require,module,exports) {
@@ -241,8 +265,41 @@ module.hot.accept(reloadCSS);
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('hidden');
+  function toggleModal(e) {
+    if (e.target === e.currentTarget) {
+      refs.modal.style.transition = '1s';
+      refs.modal.classList.toggle('hidden');
+    }
+  }
+})();
+},{}],"js/about-modal.js":[function(require,module,exports) {
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-modal-open-about]'),
+    closeModalBtn: document.querySelector('[data-modal-close-about]'),
+    modal: document.querySelector('[data-modal-about]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal(e) {
+    refs.modal.style.transition = 'opacity 1s';
+    refs.modal.classList.toggle('is-open');
+  }
+})();
+},{}],"js/location-modal.js":[function(require,module,exports) {
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-modal-open-location]'),
+    closeModalBtn: document.querySelector('[data-modal-close-location]'),
+    modal: document.querySelector('[data-modal-location]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal(e) {
+    refs.modal.style.transition = 'opacity 1s';
+    refs.modal.classList.toggle('is-open');
   }
 })();
 },{}],"index.js":[function(require,module,exports) {
@@ -252,12 +309,18 @@ require("./sass/main.scss");
 
 require("./js/burger-nav");
 
+require("./js/buy-menu");
+
 require("./js/products");
 
 require("./js/products-coffee");
 
 require("./js/products-milkshake");
-},{"./sass/main.scss":"sass/main.scss","./js/burger-nav":"js/burger-nav.js","./js/products":"js/products.js","./js/products-coffee":"js/products-coffee.js","./js/products-milkshake":"js/products-milkshake.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("./js/about-modal");
+
+require("./js/location-modal");
+},{"./sass/main.scss":"sass/main.scss","./js/burger-nav":"js/burger-nav.js","./js/buy-menu":"js/buy-menu.js","./js/products":"js/products.js","./js/products-coffee":"js/products-coffee.js","./js/products-milkshake":"js/products-milkshake.js","./js/about-modal":"js/about-modal.js","./js/location-modal":"js/location-modal.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -285,7 +348,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52391" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53298" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
