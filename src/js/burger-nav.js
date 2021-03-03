@@ -9,8 +9,8 @@
     refs.closeModalBtn.addEventListener('click', toggleModal);
 
     function toggleModal(e) {
-        if (e.target === e.currentTarget){
+            refs.modal.style.transition = 'opacity 1s';
             refs.modal.classList.toggle('is-open');
-        }
+
     }
 })();

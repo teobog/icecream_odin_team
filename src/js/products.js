@@ -10,6 +10,7 @@
 
     function toggleModal(e) {
         if (e.target === e.currentTarget){
+            refs.modal.style.transition = '1s';
             refs.modal.classList.toggle('hidden');
         }
     }

@@ -281,8 +281,6 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
-  transition-duration: 700ms;
-  transition-timing-function: ease-out;
 }
 
 .modal-product {
@@ -400,8 +398,6 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
-  transition-duration: 700ms;
-  transition-timing-function: linear;
 }
 .hidden {
   opacity: 0;
@@ -492,8 +488,6 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
-  transition-duration: 700ms;
-  transition-timing-function: ease-out;
 }
 .modal-milkshake {
   position: relative;
