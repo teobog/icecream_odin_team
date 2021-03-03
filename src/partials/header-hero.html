@@ -1,9 +1,43 @@
 <header class="header" id="header">
     <div class="container">
         <div class="background">
-            <img class="background__icecreem bottom" src="./images/hero_icecream.png" alt="">
-            <img class="background__wooman right" src="./images/tasty_women.png" alt="">
-            <img class="background__milk left" src="./images/hero_milk_bottle.png" alt="">
+            <picture>
+                <source srcset="
+                    ./images/hero/mob/mob-ice-cream.png    1x,
+                    ./images/hero/mob/mob-ice-cream@2x.png 2x
+                  " media="(min-width: 320px) and (max-width: 767px)" />
+                <source srcset="
+                    ./images/hero/tab/tab-ice-cream.png    1x,
+                    ./images/hero/tab/tab-ice-cream@2x.png 2x
+                  " media="(min-width: 768px)and (max-width: 1199px)" />
+                <source srcset="
+                    ./images/hero/pc/desktop-ice-cream.png    1x,
+                    ./images/hero/pc/desktop-ice-cream@2x.png 2x
+                  " media="(min-width: 1200px)" />
+                <img class="background__icecreem bottom" src="./images/hero_icecream.png" alt="" />
+            </picture>
+            <picture>
+                <source srcset="
+                    ./images/hero/tab/tab-girl.png    1x,
+                    ./images/hero/tab/tab-girl@2x.png 2x
+                  " media="(min-width: 768px)and (max-width: 1199px)" />
+                <source srcset="
+                    ./images/hero/pc/desktop-girl.png    1x,
+                    ./images/hero/pc/desktop-girl@2x.png 2x
+                  " media="(min-width: 1200px)" />
+                <img class="background__wooman right" src="./images/tasty_women.png" alt="" />
+            </picture>
+            <picture>
+                <source srcset="
+                    ./images/hero/tab/tab-milk.png 1x,
+                    ./images/hero/tab/tab-milk@2x.png 2x
+                  " media="(min-width: 768px)and (max-width: 1199px)" />
+                <source srcset="
+                    ./images/hero/pc/desktop-milk.png 1x,
+                    ./images/hero/pc/desktop-milk@2x.png 2x
+                  " media="(min-width: 1200px)" />
+                <img class="background__milk left" src="./images/hero_milk_bottle.png" alt="" />
+            </picture>
             <div class="background__circle top"></div>
         </div>
         <div class="header__container">
@@ -33,14 +67,14 @@
                         </li>
                         <li class="header__navigation__items">
                             <a href="#products" class="header__navigation__link">Our products</a>
-                            </li>
+                        </li>
                         <li class="header__navigation__items">
                             <a href="#contacts" class="header__navigation__link">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div class="header__buy center">
-                    <button class="header__buy__btn btn--white">
+                    <button class="header__buy__btn btn--white" data-modal-open-buy-menu>
                         Buy now
                         <svg class="header__buy__btn__icon">
                             <use href="./images/svg/symbol-defs.svg#icon-right-check"></use>
@@ -49,24 +83,27 @@
                 </div>
             </nav>
             <div class="hero">
-                <h1 class="hero__title primary-title">ice cream made with<span class="hero__title__redtext">passion</span>
+                <h1 class="hero__title primary-title">ice cream made with<span
+                        class="hero__title__redtext">passion</span>
                 </h1>
-                <button href="" type="button" class="hero__btn btn--red">
+
+                <a href="#products" class="hero__btn btn--red">
                     Products
-                </button>
-                <button href="" type="button" class="hero__btn btn--white">
+                </a>
+                <a href="#about" class="hero__btn btn--white">
                     How it’s made?
-                </button>
+                </a>
                 <div class="hero__info">
                     <p class="hero__info__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et
                     </p>
-                    <a href="" class="hero__info__link">
+                    <button href="" class="hero__info__link">
+
                         <svg class="hero__info__icon">
                             <use href="./images/svg/symbol-defs.svg#icon-arrow-right"></use>
                         </svg>
-                    </a>
+                    </button>
                     <ul class="hero__counter">
                         <li class="hero__counter__items">
                             <p class="hero__counter__red">16</p>

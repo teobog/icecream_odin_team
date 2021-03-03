@@ -1,0 +1,62 @@
+.buy-now-modal {
+  width: 40%;
+  height: 260px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 15px;
+  background-color: #FFB8CA;
+  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+
+  .primary-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .input-form {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    input {
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .input {
+      margin-bottom: 10px;
+    }
+
+    [name="list_products"] {
+      display: flex;
+      flex-direction: column;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .btn--red {
+    margin: 5px auto;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 440px;
+    height: 240px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 240px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+    height: 260px;
+  }
+}

@@ -7,16 +7,20 @@ img {
   width: 100%;
   display: block;
 }
-
+button{
+  padding: 0;
+}
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-a, a:visited {
+a{
   text-decoration: none;
-  color: black;
+}
+.header__navigation__link {
+  text-decoration: none;
+  color: white;
   transition: 250ms color cubic-bezier(0.4,0,0.2,1);
   &:hover,
   &:focus{
@@ -24,8 +28,15 @@ a, a:visited {
     outline-color: $accent-color !important;
 }
 }
-
+.footer__page{
+  transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
+  &:hover,
+  &:focus{
+      background-color: $accent-color;
+  }
+}
 p {
+
   margin: 0;
 }
 
@@ -62,11 +73,12 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
   &:hover{
+    color: white !important;
     background: #C7133E !important;
   }
   &:focus{
     background: #C7133E !important;
-    outline-color: white !important;
+    outline: none;
   }
 }
 
@@ -80,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   &:focus{
     background: #ECEBEB !important;
-    outline-color: $accent-color  !important;
+    outline: none;
   }
 }
 .products {

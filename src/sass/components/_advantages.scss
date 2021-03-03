@@ -1,8 +1,7 @@
 .advantages {
   background-color: $section-background;
   padding-bottom: 145px;
-  z-index: 2;
-  &__title {
+  &__search {
     display: none;
   }
   &__container {
@@ -10,9 +9,7 @@
   }
   &__list {
     display: flex;
-    // align-items: center;
     flex-direction: column;
-    // justify-content: center;
   }
   &__title.primary-title {
     font-size: 36px;
@@ -36,7 +33,7 @@
     width: 230px;
   }
   @media screen and (min-width: 768px) {
-    padding-bottom: 246px;
+    padding-bottom: 140px;
     &__list {
       flex-direction: row;
     }
@@ -65,6 +62,7 @@
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 139px;
+    z-index: 1;
     &__list {
       flex-direction: row;
     }

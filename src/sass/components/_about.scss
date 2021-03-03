@@ -69,10 +69,7 @@
   background-color: $section-background;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-  position: relative;
-  // z-index: 1;
   &__img {
     width: 280px;
     height: 279px;
@@ -131,7 +128,6 @@
       font-size: 14px;
       line-height: 1.79;
       padding-bottom: 25px;
-      // letter-spacing: 0.04em;
     }
     &__text {
       width: 340px;
@@ -156,7 +152,7 @@
     &__pre {
       margin-left: 74px;
       margin-top: 51px;
-      z-index: 2;
+      z-index: 3;
     }
     &__title {
       width: 463px;
@@ -214,17 +210,16 @@
   background-image: url(/images/milk_background.png);
   background-repeat: no-repeat;
   background-size: 100% 133px;
-
   position: absolute;
   bottom: 110px;
-  z-index: 1;
+  z-index: 2;
   @media screen and (min-width: 768px) {
     display: none;
   }
   @media screen and (min-width: 1280px) {
     display: inline-block;
     min-width: 1280px;
-    height: 534px;
+    height: 563px;
     background-size: cover;
     position: absolute;
     bottom: -30px;
