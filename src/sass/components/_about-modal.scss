@@ -1,0 +1,40 @@
+.about-modal{
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 15px;
+  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+  .primary-title{
+    padding-bottom: 15px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .cow__text{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .btn--red.close{
+    display: block;
+    width: 150px;
+    font-size: 16px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 480px){
+    width: 440px;
+  }
+  @media screen and (min-width: 768px){
+    width: 700px;
+  }
+  @media screen and (min-width: 1280px){
+    width: 700px;
+  }
+}
