@@ -93,20 +93,101 @@
 .icon-milkbucket::before {
   background-image: url(../images/milk_bucket.png);
   background-repeat: no-repeat;
+  background-size: contain;
+  // MOBIL 2x
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/glass@2x.png);
+  }
+
+  // tablet 2x
+  @media screen and (min-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 767px) and (min-resolution: 192dpi),
+    screen and (min-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/glass@2x.png);
+  }
+
+  // desktop 2x
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/glass@2x.png);
+  }
 }
-.icon-applebucket {
+.icon-applebucket::before {
   background-image: url(../images/apple_bucket.png);
   background-repeat: no-repeat;
+  background-size: contain;
   margin-top: 38px;
   @media screen and (min-width: 768px) {
     margin-top: 0px;
   }
+  // MOBIL 2x
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/apple@2x.png);
+  }
+
+  // tablet 2x
+  @media screen and (min-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 767px) and (min-resolution: 192dpi),
+    screen and (min-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/apple@2x.png);
+  }
+
+  // desktop 2x
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/apple@2x.png);
+  }
 }
-.icon-lovemilk {
+.icon-lovemilk::before {
   background-image: url(../images/love_milk.png);
   background-repeat: no-repeat;
+  background-size: contain;
   margin-top: 38px;
   @media screen and (min-width: 768px) {
     margin-top: 0;
+  }
+  // MOBIL 2x
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/heart@2x.png);
+  }
+
+  // tablet 2x
+  @media screen and (min-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 767px) and (min-resolution: 192dpi),
+    screen and (min-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/heart@2x.png);
+  }
+
+  // desktop 2x
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/heart@2x.png);
   }
 }
