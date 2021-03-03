@@ -3,9 +3,20 @@
 
   @media screen and (min-width: 1280px) {
     width: 100%;
-    background-image: url(/images/contacts_background.png);
+    background-image: url(../images/contacts/contact-bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  // desktop 2x
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: url(../images/contacts/contact-bg@2x.png);
+    // background-repeat: no-repeat;
+    // background-size: 100%;
+    // width: 100%;
   }
 }
 .contact {

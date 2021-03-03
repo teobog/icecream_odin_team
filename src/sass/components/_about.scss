@@ -229,4 +229,23 @@
     position: absolute;
     bottom: -30px;
   }
+  // MOBIL 2x
+        @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+          screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+          screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+          screen and (max-width: 767px) and (min-resolution: 192dpi),
+          screen and (max-width: 767px) and (min-resolution: 2dppx) {
+          background-image: url(../images/about/mob/how-its-made-mobile@2x.png);
+        }
+
+  
+
+        // desktop 2x
+        @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+          screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+          screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+          screen and (min-width: 1200px) and (min-resolution: 192dpi),
+          screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+          background-image: url(../images/about/pc/how-its-made-desktop@2x.png);
+        }
 }
