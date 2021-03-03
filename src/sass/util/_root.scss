@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   &:focus{
     background: #C7133E !important;
-    outline-color: white !important;
+    outline: none;
   }
 }
 
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   &:focus{
     background: #ECEBEB !important;
-    outline-color: $accent-color  !important;
+    outline: none;
   }
 }
 .products {
