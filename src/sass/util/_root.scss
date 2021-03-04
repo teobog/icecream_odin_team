@@ -1,0 +1,125 @@
+$accent-color: #D41443;
+$secondary-title-color: #FFA5BA;
+$description-color: #907E82;
+$section-background: #FFF5F6;
+
+img {
+  width: 100%;
+  display: block;
+}
+button{
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.header__navigation__link {
+  text-decoration: none;
+  color: white;
+  transition: 250ms color cubic-bezier(0.4,0,0.2,1);
+  &:hover,
+  &:focus{
+    color: $accent-color !important;
+    outline-color: $accent-color !important;
+}
+}
+.footer__page{
+  transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
+  &:hover,
+  &:focus{
+      background-color: $accent-color;
+  }
+}
+p {
+
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.label-title {
+  font-family: Titan One, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.primary-title {
+  font-family: Titan One,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.btn--red {
+  background: #D41443;
+  color: white;
+  cursor: pointer;
+  transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
+  &:hover{
+    color: white !important;
+    background: #C7133E !important;
+  }
+  &:focus{
+    background: #C7133E !important;
+    outline: none;
+  }
+}
+
+.btn--white {
+  color: #D41443 !important;
+  background-color: #FFFFFF !important;
+  cursor: pointer;
+  transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
+  &:hover{
+    background: #ECEBEB !important;
+  }
+  &:focus{
+    background: #ECEBEB !important;
+    outline: none;
+  }
+}
+.products {
+  .btn {
+    transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) !important;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) !important;
+      outline-color: $accent-color;
+    }
+  }
+}
+
+.container {
+  width: 87.5%;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 440px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1050px;
+  }
+}

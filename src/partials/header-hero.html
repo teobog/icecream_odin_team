@@ -1,0 +1,123 @@
+<header class="header" id="header">
+    <div class="container">
+        <div class="background">
+            <picture>
+                <source srcset="
+                    ./images/hero/mob/mob-ice-cream.png    1x,
+                    ./images/hero/mob/mob-ice-cream@2x.png 2x
+                  " media="(min-width: 320px) and (max-width: 767px)" />
+                <source srcset="
+                    ./images/hero/tab/tab-ice-cream.png    1x,
+                    ./images/hero/tab/tab-ice-cream@2x.png 2x
+                  " media="(min-width: 768px)and (max-width: 1199px)" />
+                <source srcset="
+                    ./images/hero/pc/desktop-ice-cream.png    1x,
+                    ./images/hero/pc/desktop-ice-cream@2x.png 2x
+                  " media="(min-width: 1200px)" />
+                <img class="background__icecreem bottom" src="./images/hero_icecream.png" alt="" />
+            </picture>
+            <picture>
+                <source srcset="
+                    ./images/hero/tab/tab-girl.png    1x,
+                    ./images/hero/tab/tab-girl@2x.png 2x
+                  " media="(min-width: 768px)and (max-width: 1199px)" />
+                <source srcset="
+                    ./images/hero/pc/desktop-girl.png    1x,
+                    ./images/hero/pc/desktop-girl@2x.png 2x
+                  " media="(min-width: 1200px)" />
+                <img class="background__wooman right" src="./images/tasty_women.png" alt="" />
+            </picture>
+            <picture>
+                <source srcset="
+                    ./images/hero/tab/tab-milk.png 1x,
+                    ./images/hero/tab/tab-milk@2x.png 2x
+                  " media="(min-width: 768px)and (max-width: 1199px)" />
+                <source srcset="
+                    ./images/hero/pc/desktop-milk.png 1x,
+                    ./images/hero/pc/desktop-milk@2x.png 2x
+                  " media="(min-width: 1200px)" />
+                <img class="background__milk left" src="./images/hero_milk_bottle.png" alt="" />
+            </picture>
+            <div class="background__circle top"></div>
+        </div>
+        <div class="header__container">
+            <nav class="header__nav center">
+                <a class="header__logo" href="/index.html">
+                    <img src="./images/logotype.png" alt=""></a>
+                <div class="burger">
+                    <button class="header__burger" data-modal-open-burger>
+                        <svg class="header__burger__icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-Burger"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header__navigation">
+
+                    <ul class="header__navigation__list">
+                        <li class="header__navigation__items">
+
+                            <a href="#header" class="header__navigation__link">Home</a>
+
+                        </li>
+                        <li class="header__navigation__items">
+                            <a href="#about" class="header__navigation__link">About us</a>
+                        </li>
+                        <li class="header__navigation__items">
+                            <a href="#advantages" class="header__navigation__link">How it’s made?</a>
+                        </li>
+                        <li class="header__navigation__items">
+                            <a href="#products" class="header__navigation__link">Our products</a>
+                        </li>
+                        <li class="header__navigation__items">
+                            <a href="#contacts" class="header__navigation__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__buy center">
+                    <button class="header__buy__btn btn--white" data-modal-open-buy-menu>
+                        Buy now
+                        <svg class="header__buy__btn__icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-right-check"></use>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <div class="hero">
+                <h1 class="hero__title primary-title">ice cream made with<span
+                        class="hero__title__redtext">passion</span>
+                </h1>
+
+                <a href="#products" class="hero__btn btn--red">
+                    Products
+                </a>
+                <a href="#about" class="hero__btn btn--white">
+                    How it’s made?
+                </a>
+                <div class="hero__info">
+                    <p class="hero__info__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et
+                    </p>
+                    <button href="" class="hero__info__link">
+
+                        <svg class="hero__info__icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                    <ul class="hero__counter">
+                        <li class="hero__counter__items">
+                            <p class="hero__counter__red">16</p>
+                            <p class="hero__counter__primery">cafes</p>
+                            <div class="hero__counter__circle"></div>
+                        </li>
+                        <li class="hero__counter__items">
+                            <p class="hero__counter__red">23</p>
+                            <p class="hero__counter__primery">food trucks</p>
+                            <div class="hero__counter__circle"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

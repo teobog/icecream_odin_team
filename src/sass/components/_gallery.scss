@@ -1,0 +1,125 @@
+.gallary {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgb(255, 245, 246, 1) 40%
+  );
+}
+.masonry {
+  display: flex;
+  justify-content: center;
+
+  &__items {
+    &:nth-child(1) {
+      margin-top: 40px;
+    }
+    &:nth-child(2) {
+      margin-top: 25px;
+    }
+
+    &:nth-child(4) {
+      margin-top: 27px;
+    }
+    &:nth-child(5) {
+      margin-top: 16px;
+    }
+    &:nth-child(6) {
+      margin-top: 43px;
+    }
+  }
+  &__items__column {
+    display: flex;
+    flex-direction: column;
+  }
+  &__items_link {
+    display: inline-block;
+    margin: 1px;
+    max-width: 40px;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+      transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__items__picture {
+    border-radius: 10px;
+  }
+  .big-picture {
+    max-width: 80px;
+  }
+  .small-picture {
+    max-width: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .masonry {
+    &__items {
+      &:nth-child(1) {
+        margin-top: 87px;
+      }
+      &:nth-child(2) {
+        margin-top: 54px;
+      }
+
+      &:nth-child(4) {
+        margin-top: 61px;
+      }
+      &:nth-child(5) {
+        margin-top: 33px;
+      }
+      &:nth-child(6) {
+        margin-top: 95px;
+      }
+    }
+    
+    &__items__picture {
+      border-radius: 20px;
+    }
+    .masonry__items_link {
+      max-width: 84px;
+    }
+    .big-picture {
+      max-width: 174px;
+    }
+    .small-picture {
+      max-width: 84px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .masonry {
+    &__items {
+      &:nth-child(1) {
+        margin-top: 142px;
+      }
+      &:nth-child(2) {
+        margin-top: 87px;
+      }
+
+      &:nth-child(4) {
+        margin-top: 100px;
+      }
+      &:nth-child(5) {
+        margin-top: 53px;
+      }
+      &:nth-child(6) {
+        margin-top: 154px;
+      }
+    }
+    &__items_link {
+      margin: 4px;
+    }
+    .masonry__items_link {
+      max-width: 140px;
+    }
+    .big-picture {
+      max-width: 284px;
+    }
+    .small-picture {
+      max-width: 140px;
+    }
+  }
+}
