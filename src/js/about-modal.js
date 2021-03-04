@@ -8,9 +8,9 @@
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
 
-    function toggleModal(e) {
-            refs.modal.style.transition = 'opacity 1s';
-            refs.modal.classList.toggle('is-open');
+    function toggleModal() {
+        refs.modal.style.transition = 'opacity 1s';
+        refs.modal.classList.toggle('is-open');
 
     }
 })();
