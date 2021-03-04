@@ -1120,6 +1120,21 @@ header {
     left: calc(50% - 167px);
   }
 }
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .products .card__cream::before {
+    background-image: url(/product@2x.df1c741a.png);
+  }
+}
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .products .card__cream::before {
+    background-image: url(/product1@2x.cbe6e579.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products .card__cream::before {
+    background-image: url(/product@2x.c87a64df.png);
+  }
+}
 .products .card__coffee {
   background: #f0d1a5;
 }
@@ -1150,6 +1165,21 @@ header {
     left: calc(50% - 167px);
   }
 }
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .products .card__coffee::before {
+    background-image: url(/product2@2x.4dded6e4.png);
+  }
+}
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .products .card__coffee::before {
+    background-image: url(/product2@2x.4577a6de.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products .card__coffee::before {
+    background-image: url(/product2@2x.c2171ba6.png);
+  }
+}
 .products .card__milkshakes {
   background: #c2e297;
 }
@@ -1178,6 +1208,21 @@ header {
     width: 335px;
     height: 335px;
     left: calc(50% - 167px);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .products .card__milkshakes::before {
+    background-image: url(/product3@2x.14121e25.png);
+  }
+}
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .products .card__milkshakes::before {
+    background-image: url(/product3@2x.ceedf389.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products .card__milkshakes::before {
+    background-image: url(/product3@2x.c62bbd49.png);
   }
 }
 .products .card .btn {
@@ -1707,6 +1752,16 @@ header {
     bottom: -30px;
   }
 }
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .milk {
+    background-image: url(/how-its-made-mobile@2x.47ad106f.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .milk {
+    background-image: url(/how-its-made-desktop@2x.393236d3.png);
+  }
+}
 
 .advantages {
   background-color: #FFF5F6;
@@ -1801,27 +1856,75 @@ header {
 .icon-milkbucket::before {
   background-image: url(/milk_bucket.7c96fc3a.png);
   background-repeat: no-repeat;
+  background-size: contain;
 }
-
-.icon-applebucket {
-  background-image: url(/apple_bucket.9a92a048.png);
-  background-repeat: no-repeat;
-  margin-top: 38px;
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .icon-milkbucket::before {
+    background-image: url(/glass@2x.4407835a.png);
+  }
 }
-@media screen and (min-width: 768px) {
-  .icon-applebucket {
-    margin-top: 0px;
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .icon-milkbucket::before {
+    background-image: url(/glass@2x.4407835a.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .icon-milkbucket::before {
+    background-image: url(/glass@2x.4407835a.png);
   }
 }
 
-.icon-lovemilk {
-  background-image: url(/love_milk.98452c11.png);
+.icon-applebucket::before {
+  background-image: url(/apple_bucket.9a92a048.png);
   background-repeat: no-repeat;
+  background-size: contain;
   margin-top: 38px;
 }
 @media screen and (min-width: 768px) {
-  .icon-lovemilk {
+  .icon-applebucket::before {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .icon-applebucket::before {
+    background-image: url(/apple@2x.25911083.png);
+  }
+}
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .icon-applebucket::before {
+    background-image: url(/apple@2x.25911083.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .icon-applebucket::before {
+    background-image: url(/apple@2x.25911083.png);
+  }
+}
+
+.icon-lovemilk::before {
+  background-image: url(/love_milk.98452c11.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 38px;
+}
+@media screen and (min-width: 768px) {
+  .icon-lovemilk::before {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .icon-lovemilk::before {
+    background-image: url(/heart@2x.7b0f034c.png);
+  }
+}
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .icon-lovemilk::before {
+    background-image: url(/heart@2x.7b0f034c.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .icon-lovemilk::before {
+    background-image: url(/heart@2x.7b0f034c.png);
   }
 }
 
@@ -2107,9 +2210,14 @@ header {
 @media screen and (min-width: 1280px) {
   .contacts {
     width: 100%;
-    background-image: url(/contacts_background.57192529.png);
+    background-image: url(/contact-bg.de22c128.png);
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(/contact-bg@2x.de204c15.png);
   }
 }
 
